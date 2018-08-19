@@ -3,7 +3,7 @@
     <h2 class="center cyan-text">Hydra Chat</h2>
     <div class="card">
       <div class="card-content">
-        <ul class="messages">
+        <ul class="messages" v-chat-scroll>
           <li v-for="message in messages" :key="message.id">
             <span class="cyan-text">{{ message.name }}</span>
             <span class="grey-text text-darken-3">{{ message.content }}</span>
