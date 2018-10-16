@@ -1,7 +1,7 @@
 <template>
   <div class="new-message">
     <form @submit.prevent="addMessage">
-      <label for="new-message">New Message (enter to send):</label>
+      <label for="new-message">New Message (or use enter to send):</label>
       <input type="text" name="new-message" v-model="newMessage">
       <p v-if="feedback" class="red-text">{{ feedback }}</p>
     </form>
@@ -41,5 +41,12 @@ export default {
 </script>
 
 <style>
-
+/* .new-message .add-message{
+  position: absolute;
+  right: 25px;
+  bottom: 16px;
+  color: #fff;
+  font-size: 1.4em;
+  cursor: pointer;
+} */
 </style>
